@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  
+  img {
+    width: 650px;
+    border-radius: 10px;
+  }
+  
+  h3,
+  h4 {
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", "sans serif";
+    margin: 1rem 0;
+  }
+  
+  h1 {
+    margin: 1rem 0;
+    color: hsl(24, 5%, 18%);
+    font-family: "Young Serif", "sans serif";
+    font-weight: 400;
+  }
+  
+  h2 {
+    color: hsl(332, 51%, 32%);
+    font-family: "Outfit", "sans serif";
+    font-size: 16px;
+    margin-left: -6px;
+  }
+  
+  
+  
+  li,
+  p {
+    font-family: "Outfit", "sans serif";
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  li {
+    margin-left: 1rem;
+    padding: 0;
+    color: hsl(30, 10%, 34%);
+  }
+  
+  ol li {
+    margin: 0.5rem;
+    padding-left: 20px;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* th {
+    text-align: left;
+    border: none;
+  }
+  
+  tr  {
+      border-bottom: 1px solid black;
+  }
+  
+  th,
+  td {
+    padding: 0.5rem;
+   border: none;
+  } */
+  
+  tr {
+    position: relative;
+  }
+  
+  tr::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 0.5px solid hsl(30, 10%, 34%);
+  }
+  
+  th {
+    text-align: left;
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", "sans serif";
+    font-weight: 400;
+  }
+  
+  td {
+    color: hsl(14, 45%, 36%);
+    font-family: "Outfit", "sans serif";
+    font-weight: 700;
+  }
+  
+  th,
+  td {
+    border: none;
+    padding: 0.5rem;
+  }
+  
+  ol ::marker {
+   margin-right: 1rem;
+  
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
+  hr {
+    margin: 1rem 0;
+    color: hsl(30, 18%, 87%);
+  }
+  
+  li::marker {
+    color: hsl(332, 51%, 32%);
+    font-size: 80%;
+    
+  }
+  
+  .container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 700px;
+    margin: 200px auto;
+    border-radius: 10px;
+  }
+  
+  .img {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+  }
+  
+  .preparation li {
+    margin: 0.5rem;
+  }
+  
+  .ingredients li {
+      padding-left: 20px;
+  }
+  
+  @media (max-width: 450px)   {
+  
+      html,body   {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+      }
+  
+      .container{
+          position: relative;
+          width: 100%;
+          margin-top: 0;
+      }
+  
+      h1  {
+          margin-top: 190px;
+      }
+  
+      .img    {
+          box-sizing: content-box;
+          width: 100%;
+      }
+  
+      img {
+          border-radius: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+      }
+  }
